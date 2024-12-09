@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: karma;
+    font-size: 40px;
+    color: #7a815e;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+body {
+    background-color: #CDD8A2;    
+}
+
+#container {
+    display: flex;
+    align-items: stretch;
+    height: 304px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+textarea {
+    resize: none; 
+    width: 300px; 
+    height: 300px; 
+    background-image: url(img/cutefixed.png);
+    background-size: cover;
+    line-height: 20px;
+    border: #FFE5ED 10px solid;
+    color: white;
+    font-family: karma;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 0px 10px 0px #FFE5ED;    
+}
+
+
+
+#sidebar {
+    position: absolute;
+    left: 320px;
+    border: #FFE5ED 10px solid;
+    width: 40px;
+    max-height: 300px;
+    min-height: 300px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #FFE5ED;
+    box-shadow: 0px 0px 10px 0px #FFE5ED;    
+    overflow: auto;
+    padding-left: 15px;
+}
+
+button {
+    min-width: 60px;
+    min-height: 50px;
+    background-color: black;
+    border: #FFE5ED 9px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: karma;
+    color: white;
+    margin-left: -24px;
+    margin-top: -9px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 0px #FFE5ED inset; 
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #CDD8A2;
+    }
+    #container {
+        left: 50%;
+        top: 32%;
+    }
+    #sidebar {
+        left: 0;
+        top: 310px;
+        width: 89%;
+        border-radius: 0px;
+    }
+    textarea {
+        height: 300px;
+        border-radius: 0px;
+    }
+    button {
+        margin-left: 1.6%;
+        margin-top: 0;
+        color: #CDD8A2;
+    }
+    
+}
